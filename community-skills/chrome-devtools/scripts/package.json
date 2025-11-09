@@ -1,0 +1,16 @@
+{
+  "name": "chrome-devtools-scripts",
+  "version": "2.0.0",
+  "description": "Pure Chrome DevTools Protocol (CDP) automation scripts",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "chrome-launcher": "^1.1.2",
+    "ws": "^8.18.0",
+    "debug": "^4.4.0",
+    "yargs": "^17.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
