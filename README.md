@@ -1,21 +1,41 @@
-# Skills
-Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks.
+# Skills for AI Assistants
 
-For more information, check out:
-- [What are skills?](https://support.claude.com/en/articles/12512176-what-are-skills)
-- [Using skills in Claude](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
-- [How to create custom skills](https://support.claude.com/en/articles/12512198-creating-custom-skills)
-- [Equipping agents for the real world with Agent Skills](https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)
+Skills are modular instruction sets that extend AI capabilities with specialized knowledge, workflows, and tools. This repository provides both **GitHub Copilot Instructions** for VS Code and **Claude Code Skills** in their original format.
 
-# About This Repository
+## 🆕 Now Available for GitHub Copilot!
 
-This repository contains example skills that demonstrate what's possible with Claude's skills system. These examples range from creative applications (art, music, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.).
+This repository has been adapted for GitHub Copilot in VS Code. Open this workspace in VS Code with Copilot enabled to get specialized assistance across multiple domains:
 
-Each skill is self-contained in its own directory with a `SKILL.md` file containing the instructions and metadata that Claude uses. Browse through these examples to get inspiration for your own skills or to understand different patterns and approaches.
+**Quick Start with Copilot:**
+```
+@workspace create a PDF with form fields
+@workspace build an MCP server for Slack
+@workspace generate algorithmic art with particles
+```
 
-The example skills in this repo are open source (Apache 2.0). We've also included the document creation & editing skills that power [Claude's document capabilities](https://www.anthropic.com/news/create-files) under the hood in the [`document-skills/`](./document-skills/) folder. These are source-available, not open source, but we wanted to share these with developers as a reference for more complex skills that are actively used in a production AI application.
+See [`.github/copilot-instructions/README.md`](.github/copilot-instructions/README.md) for complete usage guide.
 
-**Note:** These are reference examples for inspiration and learning. They showcase general-purpose capabilities rather than organization-specific workflows or sensitive content.
+## About This Repository
+
+This repository contains specialized instruction sets demonstrating what's possible with skill-based AI assistance. Examples range from creative applications (algorithmic art, design) to technical tasks (web app testing, MCP server development) to enterprise workflows (document processing, communications, branding).
+
+**Two Formats Included:**
+
+1. **GitHub Copilot Instructions** (`.github/copilot-instructions/`) - Optimized for VS Code
+   - Automatic workspace context loading
+   - Organized by domain (document, development, creative, communication)
+   - Standard Markdown format
+   - [View Instructions →](.github/copilot-instructions/)
+
+2. **Claude Code Skills** (workspace root folders) - Original format
+   - Self-contained skill folders with `SKILL.md`
+   - Scripts, references, and assets included
+   - Plugin marketplace compatible
+   - [View Original Skills →](#try-in-claude-code-claudeai-and-the-api)
+
+The example skills are open source (Apache 2.0). Document skills (`document-skills/`) are source-available reference examples from Claude's production document capabilities.
+
+**Note:** These are reference examples for inspiration and learning, showcasing general-purpose capabilities rather than organization-specific workflows.
 
 ## Disclaimer
 
@@ -54,6 +74,38 @@ The `document-skills/` subdirectory contains skills that Anthropic developed to 
 - **xlsx** - Create, edit, and analyze Excel spreadsheets with support for formulas, formatting, data analysis, and visualization
 
 **Important Disclaimer:** These document skills are point-in-time snapshots and are not actively maintained or updated. Versions of these skills ship pre-included with Claude. They are primarily intended as reference examples to illustrate how Anthropic approaches developing more complex skills that work with binary file formats and document structures.
+
+# Try in GitHub Copilot (VS Code)
+
+## GitHub Copilot in VS Code
+
+**Quick Start:**
+1. Open this repository in VS Code
+2. Ensure GitHub Copilot is enabled
+3. Instructions automatically load from `.github/copilot-instructions/`
+
+**Usage Examples:**
+```
+@workspace help me create a PDF with form fields
+@workspace build an MCP server for the GitHub API
+@workspace generate algorithmic art using flow fields
+@workspace test my web app with Playwright
+@workspace create an Excel spreadsheet with formulas
+```
+
+**Available Instruction Sets:**
+- **Document Skills**: PDF, Word, Excel, PowerPoint processing
+- **Development Skills**: MCP server building, web testing, artifact creation
+- **Creative Skills**: Algorithmic art, canvas design, theme creation
+- **Communication Skills**: Internal comms, brand guidelines
+- **Meta Skills**: Creating new instruction sets
+
+**Learn More:**
+- [Copilot Instructions README](.github/copilot-instructions/README.md)
+- [Migration Guide](.github/copilot-instructions/MIGRATION.md)
+- [Core Philosophy](.github/copilot-instructions/00-core-philosophy.md)
+
+---
 
 # Try in Claude Code, Claude.ai, and the API
 

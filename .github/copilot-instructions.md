@@ -2,16 +2,89 @@
 
 ## Repository Overview
 
-This repository contains example skills for Claude's skills system. Skills are folders containing instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks.
+This repository contains specialized instruction sets and skills that extend AI capabilities with domain-specific knowledge. Originally designed for Claude Code, this repository has been adapted for GitHub Copilot in VS Code while preserving the original Claude skills for reference.
 
-## Repository Structure
+**Two Systems Included:**
+1. **GitHub Copilot Instructions** - Adapted for VS Code (`.github/copilot-instructions/`)
+2. **Claude Code Skills** - Original format for Claude (workspace root folders)
+
+## GitHub Copilot Instructions
+
+The `.github/copilot-instructions/` directory contains instruction sets optimized for GitHub Copilot in VS Code:
+
+- **Core Philosophy** (`00-core-philosophy.md`) - Foundational principles for skill-based AI assistance
+- **Document Skills** - PDF, Word, Excel, PowerPoint processing
+- **Development Skills** - MCP server building, web app testing, artifact creation
+- **Creative Skills** - Algorithmic art, canvas design, theme creation
+- **Communication Skills** - Internal comms, brand guidelines
+- **Meta Skills** - Creating new instruction sets
+
+**See** `.github/copilot-instructions/README.md` for complete usage guide.
+
+## Original Claude Code Skills
+
+The workspace root contains original Claude skills for reference:
 
 - **Example Skills**: Creative (algorithmic-art, canvas-design, slack-gif-creator), Development (artifacts-builder, mcp-builder, webapp-testing), Enterprise (brand-guidelines, internal-comms, theme-factory), and Meta skills (skill-creator, template-skill)
-- **Document Skills** (`document-skills/`): Advanced skills for working with binary file formats (docx, pdf, pptx, xlsx) - these are source-available reference examples, not open source
-- **Agent Skills Spec** (`agent_skills_spec.md`): Specification for creating skills
+- **Document Skills** (`document-skills/`): Advanced skills for binary file formats (docx, pdf, pptx, xlsx) - source-available reference examples
+- **Agent Skills Spec** (`agent_skills_spec.md`): Original specification for Claude skills
 - **Template Skill** (`template-skill/`): Basic starting point for new skills
 
-## Skill Structure Requirements
+## How to Use in VS Code with GitHub Copilot
+
+### Quick Start
+
+1. **Open this workspace in VS Code** with GitHub Copilot enabled
+2. **Instructions load automatically** from `.github/copilot-instructions/`
+3. **Use @workspace** in Copilot Chat to leverage instructions:
+
+```
+@workspace create a PDF with form fields using pdf-processing instructions
+@workspace build an MCP server for Slack API following mcp-builder guide
+@workspace generate algorithmic art with particle systems
+```
+
+### Accessing Instruction Sets
+
+**Via Copilot Chat:**
+```
+@workspace list available skills and their purposes
+@workspace help me with PDF processing
+@workspace show mcp-builder workflow
+```
+
+**Via Inline Chat (Ctrl+I / Cmd+I):**
+```
+create PDF rotation function using pdf skill
+implement following mcp-builder patterns
+apply algorithmic art principles
+```
+
+### Workspace Resources
+
+Instructions reference workspace resources that remain in original skill folders:
+- **Scripts**: `skill-name/scripts/` - Executable tools
+- **References**: `skill-name/references/` - Detailed documentation
+- **Assets**: `skill-name/assets/` - Templates and resources
+
+**Example:** Run a PDF script via @terminal:
+```
+@terminal python document-skills/pdf/scripts/rotate_pdf.py input.pdf 90
+```
+
+## Key Differences: Copilot vs Claude
+
+| Aspect | GitHub Copilot | Claude Code |
+|--------|----------------|-------------|
+| **Instructions** | `.github/copilot-instructions/*.md` | `SKILL.md` with YAML |
+| **Activation** | Automatic workspace context | Manual skill mention |
+| **Structure** | Organized by category | One folder per skill |
+| **Tools** | VS Code API + @terminal | Claude-specific tools |
+| **Distribution** | Git repository | Plugin marketplace ZIP |
+
+## Original Claude Skill Structure
+
+For reference, Claude skills follow this structure:
 
 Every skill MUST follow this structure:
 
