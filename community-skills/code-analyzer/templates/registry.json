@@ -1,0 +1,17 @@
+{
+  "templates": [
+    {
+      "id": "java-springboot",
+      "name": "Java + SpringBoot",
+      "description": "Java 项目使用 SpringBoot 框架",
+      "detect_files": ["pom.xml", "build.gradle"],
+      "detect_dependencies": ["spring-boot-starter"],
+      "detect_annotations": ["@SpringBootApplication"],
+      "supported_versions": ["2.x", "3.x"],
+      "paths": {
+        "defect_rules": "templates/java-springboot/defect-rules.md"
+      },
+      "priority": 1
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "project_name": "user-service",
+  "project_path": "/Users/apple/projects/user-service",
+  "techstack": "java-springboot",
+  "framework_version": "3.2.0",
+  "build_tool": "maven",
+  "java_version": "17",
+  "modules": [
+    "user-service"
+  ],
+  "key_packages": {
+    "controller": "com.example.user.controller",
+    "service": "com.example.user.service",
+    "repository": "com.example.user.repository",
+    "entity": "com.example.user.entity",
+    "dto": "com.example.user.dto",
+    "config": "com.example.user.config"
+  },
+  "file_stats": {
+    "total_files": 36,
+    "total_lines": 8542,
+    "java_files": 36,
+    "test_files": 12
+  },
+  "dependencies": {
+    "spring-boot-starter-web": "3.2.0",
+    "spring-boot-starter-data-jpa": "3.2.0",
+    "mysql-connector-java": "8.0.33",
+    "lombok": "1.18.30"
+  },
+  "serena_indexed": true,
+  "last_index_time": "2025-10-26T10:30:00+08:00",
+  "index_stats": {
+    "indexed_files": 36,
+    "indexed_lines": 8542,
+    "index_duration_seconds": 195
+  },
+  "template_path": "templates/java-springboot/",
+  "created_at": "2025-10-26T10:30:00+08:00",
+  "updated_at": "2025-10-26T10:30:00+08:00",
+  "version": "1.0.0"
+}

@@ -4,24 +4,32 @@ This directory contains skills discovered from community forks of the original a
 
 ## Source
 
-These skills were collected from the top 10 most active forks of https://github.com/anthropics/skills
+These skills were collected from the top forks of https://github.com/anthropics/skills
 
 ## Fork Analysis Summary
 
-**Forks Analyzed**: 10  
-**New Skills Found**: ~67 unique skills  
-**Skills Imported**: 21 (high and medium priority)
+**Total Forks Analyzed**: 19 (10 round 1 + 9 round 2)
+**Total New Skills Found**: ~75 unique skills  
+**Skills Imported**: 28 (21 round 1 + 7 round 2)
 
 ### Source Repositories
 
+#### Round 1 - High Activity Forks
 1. **Bantarus/skills** - 17 new skills (ML/Desktop focused)
 2. **aabrius/skills** - 13 new skills (Development guidelines)
 3. **btli/skills** - 32 new skills (Cloud/Dev tools)
 4. **SimWerx/claude_skills** - 5 new skills (Research/Documentation)
 
+#### Round 2 - Star-Rated Forks
+1. **PixelML/skills** (2 stars) - 1 new skill (NotebookLM)
+2. **chyax98/skills** - 3 new skills (Code analysis, mindmaps, slides)
+3. **rm2thaddeus/skills** - 2 new skills (Document handling)
+4. **amicoda1/ClaudeSkills** - 1 new skill (MarkItDown)
+5. **mateusztylec/awesome-llm-skills** (1 star) - 1 new skill (Notion)
+
 ## Skills Included
 
-### High Priority - General Purpose (10)
+### Round 1 - High Priority (10 skills)
 
 #### Development Tools
 - **debugging** (btli) - Debugging strategies and techniques
@@ -55,6 +63,23 @@ These skills were collected from the top 10 most active forks of https://github.
 #### Cloud & Infrastructure
 - **gcloud** (btli) - Google Cloud Platform tools
 - **mongodb** (btli) - MongoDB database operations
+
+### Round 2 - High Priority (7 skills)
+
+#### Knowledge & Research Tools
+- **notebooklm** (PixelML) - Google NotebookLM integration for document analysis
+- **notion-knowledge-capture** (mateusztylec) - Notion knowledge management
+
+#### Content Generation
+- **mindmap-generator** (chyax98) - Convert text/files into structured Markdown mindmaps
+- **slides-generator** (chyax98) - Automated presentation generation
+
+#### Development Tools
+- **code-analyzer** (chyax98) - Code analysis and review (Chinese language)
+
+#### Document Processing
+- **markitdown** (amicoda1) - Microsoft MarkItDown integration
+- **document_handling** (rm2thaddeus) - Document handling workflows
 
 ## Skills Not Yet Imported
 
@@ -115,6 +140,15 @@ Use the research-synthesis skill to analyze these papers
 - [ ] gcloud
 - [ ] mongodb
 - [ ] chrome-devtools
+
+**Round 2 Skills (7)**
+- [ ] notebooklm
+- [ ] notion-knowledge-capture
+- [ ] mindmap-generator
+- [ ] slides-generator
+- [ ] code-analyzer
+- [ ] markitdown
+- [ ] document_handling
 
 ## License
 
